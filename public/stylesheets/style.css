@@ -192,7 +192,104 @@ section .contenido .detalle{
   margin: 0 10px 10px 10px;
 }
 
+/*FOOTER*/
 
+.footer {
+  padding: 20px;
+  background-color: white;
+}
+
+.footer article{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer article i{
+  font-size: 35px;
+  color: var(--ColorCeleste);
+  display: flex;
+  margin: 10px 0;
+}
+
+.footer article h4, .footer article p {
+  color: var(--ColorGris-oscuro);
+  display: flex;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--ColorGris-claro);
+  border-bottom: 1px solid var(--ColorGris-claro);
+  color: var(--ColorGris-oscuro)
+}
+
+/*MEDIA*/
+
+/* Tablet */
+
+@media(min-width:426px){
+  header .cuotas{
+    margin: 0;
+    text-align: end;
+    padding: 0;
+  }
+
+  header .cuotas p{
+    margin: 0;
+    line-height: 20px;
+    width: 80%;
+    position: relative;
+    right: -14px;
+  }
+
+  header .cuotas i{
+    position: relative;
+    left: 40px;
+    top: 4px;
+  }
+
+  header ul li {
+      justify-content: space-between;
+      padding-right: 12px;
+  }
+  header ul.usuario li:last-child {
+      padding-right: 0;
+  }
+  .banner img {
+    display: block;
+  }
+}
+
+/*ESCRITORIO*/
+
+@media(min-width:1024px) {
+  header .cuotas{
+    align-items: center;
+  }
+  header .cuotas p{
+    width: 100%;
+    right: 0px;
+    
+  }
+  header .cuotas i{
+    left: 18px;
+    top: 0px;
+  }
+  footer article h4 {
+      font-size: 1.3rem;
+  }
+  footer article p {
+      font-size: 0.9rem;
+  }
+  footer .copyright {
+      font-size: 0.7rem;
+  }
+}
 
 
 
